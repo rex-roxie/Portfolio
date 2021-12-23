@@ -5,6 +5,9 @@
 
 body {
     font-size: 18px;
+    background-image: url(data:image/jpeg;base64,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);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header {
@@ -20,6 +23,7 @@ header h1 {
     font-size: 4em;
     margin-bottom: 10%;
     font-family: cursive;
+    font-family: "Verdana";
 }
 
 header div {
@@ -44,25 +48,52 @@ button {
     left: 5%;
 }
 
+.fas:hover, .fa-bars:hover {
+    cursor: pointer;
+}
+
 nav {
     position: fixed;
-    background-color: red;
-    width: 50%;
+    background-color: blue;
+    width: 60%;
     height: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     flex-wrap: wrap;
     flex-grow: 1fr;
     justify-content: center;
     align-items: center;
+    /* transition: display 100ms linear; */
 }
 
 nav li {
     list-style: none;
-    margin: 10%;
+    margin: 25% 0;
 }
 
 nav a {
-    font-size: 5em;
+    font-size: 3em;
     text-decoration: none;
+    font-family: "Verdana";
+    color: white;
+    transition: color 200ms linear;
+}
+
+nav a:hover {
+    color: red;
+}
+
+#x {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    /* right: 51%; */
+    font-size: 3em;
+    font-family: "Verdana";
+    font-weight: bold;
+    display: none;
+}
+
+#x:hover {
+    cursor: pointer;
 }
