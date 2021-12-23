@@ -2,6 +2,9 @@ const nav = document.getElementById("nav");
 const bars = document.getElementById("bars");
 const x = document.getElementById("x");
 const rest_of_body = document.getElementById("rest-of-body");
+const aboutlink = document.getElementById("aboutlink");
+const projectslink = document.getElementById("projectslink");
+const skillslink = document.getElementById("skillslink");
 let isNavOpen = false;
 
 const OpenNav = () => {
