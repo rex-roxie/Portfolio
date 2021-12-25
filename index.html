@@ -9,11 +9,11 @@
     <script src="index.js" defer></script>
     <title>Ayden's Portfolio</title>
 </head>
-<body>
+<body id="body">
     <nav id="nav">
         <h1 id="x">X</h1>
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="#header" id="homelink" onclick="CloseNav()">Home</a></li>
             <li><a href="#about" id="aboutlink" onclick="CloseNav()">About</a></li>
             <li><a href="#projects" id="projectslink" onclick="CloseNav()">Projects</a></li>
             <li><a href="#skills" id="skillslink" onclick="CloseNav()">Skills</a></li>
@@ -22,7 +22,8 @@
     <i class="fas fa-bars" id="bars"></i>
     <div id="rest-of-body">
         <!-- <img src="logo.png" id="logo" /> -->
-        <header id="header">
+        <header id="header" onclick="CloseNav()">
+            <i class="fas fa-adjust" id="adjust" onclick="lightMode()"></i>
             <div>
                 <h1>Ayden's Portfolio</h1>
                 <h3>An aspiring Full Stack Developer</h3>
@@ -30,8 +31,10 @@
             </div>
         </header>
         <section id="about">
-            <h1>About</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, illo nulla aperiam neque provident voluptates quidem iusto, similique maxime adipisci, repellendus cum eius eum facilis harum dolor ducimus corporis quo?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptate quos reprehenderit autem provident totam doloribus nam similique sequi saepe hic et eum odit sed consequatur iusto, ab in fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, officiis recusandae nostrum praesentium explicabo, nemo dicta consequatur reprehenderit voluptatum debitis pariatur. Inventore sint libero consequatur quia optio, obcaecati eaque nostrum.</p>
+            <div>
+                <h1>About</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, illo nulla aperiam neque provident voluptates quidem iusto, similique maxime adipisci, repellendus cum eius eum facilis harum dolor ducimus corporis quo? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi voluptate quos reprehenderit autem provident totam doloribus nam similique sequi saepe hic et eum odit sed consequatur iusto, ab in fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, officiis recusandae nostrum praesentium explicabo, nemo dicta consequatur reprehenderit voluptatum debitis pariatur. Inventore sint libero consequatur quia optio, obcaecati eaque nostrum.</p>
+            </div>
         </section>
         <section id="projects">
     

@@ -1,28 +1,45 @@
+const body = document.getElementById("body");
 const nav = document.getElementById("nav");
 const bars = document.getElementById("bars");
 const x = document.getElementById("x");
+const adjust = document.getElementById("adjust");
 const rest_of_body = document.getElementById("rest-of-body");
+const homelink = document.getElementById("homelink");
 const aboutlink = document.getElementById("aboutlink");
 const projectslink = document.getElementById("projectslink");
 const skillslink = document.getElementById("skillslink");
-let isNavOpen = false;
-
-const OpenNav = () => {
-    nav.style.display = "flex";
-    nav.style.opacity = "70%";
-    bars.style.display = "none";
-    x.style.display = "block";
-    isNavOpen = true;
-}
 
 const CloseNav = () => {
-    nav.style.display = "none";
-    bars.style.display = "block";
+    nav.style.width = "0%";
+    homelink.style.display = "none";
+    aboutlink.style.display = "none";
+    projectslink.style.display = "none";
+    skillslink.style.display = "none";
     x.style.display = "none";
-    isNavOpen = false;
+    bars.style.display = "block";
 }
 
-bars.onclick = OpenNav;
-x.onclick = CloseNav;
+const lightMode = () => {
+    body.classList.toggle("dark-mode");
+    isDark = false;
+}
 
-rest_of_body.addEventListener("mousedown", CloseNav);
+bars.addEventListener("mousedown", function() {
+    nav.style.width = "60%";
+    homelink.style.display = "block";
+    aboutlink.style.display = "block";
+    projectslink.style.display = "block";
+    skillslink.style.display = "block";
+    x.style.display = "block";
+    bars.style.display = "none";
+});
+
+x.addEventListener("mousedown", function() {
+    nav.style.width = "0%";
+    homelink.style.display = "none";
+    aboutlink.style.display = "none";
+    projectslink.style.display = "none";
+    skillslink.style.display = "none";
+    x.style.display = "none";
+    bars.style.display = "block";
+});
